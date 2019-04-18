@@ -1,0 +1,17 @@
+.container{
+    height: 300px;
+    margin: 8px;
+    border: 2px solid red;
+}
+button, input[type="button"]{
+    border-radius: 8px;
+    background-color: yellow;
+    height: 25px;
+    width: 100px;
+    font-weight: bold;
+    border: 2px solid black;
+
+}
+button[type="button"]{
+    background-color: darkred;
+}
