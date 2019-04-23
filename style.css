@@ -1,17 +1,37 @@
-.container{
-    height: 300px;
-    margin: 8px;
-    border: 2px solid red;
+header, footer {
+    background-color: rgb(255, 188, 72);
+    padding: 16px;
 }
-button, input[type="button"]{
-    border-radius: 8px;
-    background-color: yellow;
-    height: 25px;
-    width: 100px;
-    font-weight: bold;
-    border: 2px solid black;
 
+header {
+    text-align: right;
 }
-button[type="button"]{
+
+header button, footer button {
+    height: 35px;
+    width: 80px;
+    color: rgb(218, 255, 201);
+    background-color: rgb(32, 197, 255);
+}
+
+.main_content {
+    padding: 18px;
+    border: 2px solid darkslategrey;
+    border-image: initial;
+    margin: 15px;
+}
+
+.section {
+    background-color: aliceblue;
+    margin: 8px;
+}
+
+.section button {
+    height: 28px;
     background-color: darkred;
+    color: white;
+}
+
+.main_content > button {
+    height: 20px;
 }
