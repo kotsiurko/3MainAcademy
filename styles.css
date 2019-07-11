@@ -1,0 +1,28 @@
+.mainHeader{
+    text-align: center;
+    font-family: fantasy;
+}
+
+.rowContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.rowContainer > div:hover{
+    cursor: pointer;
+    background-color: #cdced3;
+}
+.rowContainer > div:active{
+    border: 1px solid #fa6a37;
+}
+
+#secondaryCont{
+    display: none;
+    margin: 0 15%;
+}
+#sunSign, #mood{
+    font-weight: bold;
+}
+.imgWrapper{
+    text-align: center;
+}

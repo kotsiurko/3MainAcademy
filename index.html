@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Hello World Page</title>
-    <link rel="icon" href="http://icons.iconarchive.com/icons/marcus-roberto/google-play/128/Google-Drive-icon.png">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<!- comments here -->
-
 <body>
-Hello World!
-    <div>
-       <img src="https://www.stockvault.net/data/2007/03/01/102413/thumb16.jpg" alt="Nature pic"/>
+<h1 id="header" class="mainHeader">Choose your Sunsign</h1>
+<div id="mainCont" class="mainContainer">
+    <div class="rowContainer">
+        <div id="gemini" onclick="getSignHoroscope(this)"><img src="assets/gemini.png"></div>
+        <div id="aquarius" onclick="getSignHoroscope(this)"><img src="assets/aquarius.png"></div>
+        <div id="cancer" onclick="getSignHoroscope(this)"><img src="assets/cancer.png"></div>
+        <div id="capricorn" onclick="getSignHoroscope(this)"><img src="assets/capricorn.png"></div>
     </div>
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/yhIuIYx_6EI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="rowContainer">
+        <div id="leo" onclick="getSignHoroscope(this)"><img src="assets/leo.png"></div>
+        <div id="libra" onclick="getSignHoroscope(this)"><img src="assets/libra.png"></div>
+        <div id="pisces" onclick="getSignHoroscope(this)"><img src="assets/pisces.png"></div>
+        <div id="sagittarius" onclick="getSignHoroscope(this)"><img src="assets/sagittarius.png"></div>
     </div>
-    <div>
-        <iframe width="560" height="315" src="https://ru.wikipedia.org/wiki/Вики"></iframe>
-        <iframe width="560" height="315" src="https://ru.wikipedia.org/wiki/Вики"></iframe>
+    <div class="rowContainer">
+        <div id="scorpio" onclick="getSignHoroscope(this)"><img src="assets/scorpio.png"></div>
+        <div id="taurus" onclick="getSignHoroscope(this)"><img src="assets/taurus.png"></div>
+        <div id="virgo" onclick="getSignHoroscope(this)"><img src="assets/virgo.png"></div>
+        <div id="aries" onclick="getSignHoroscope(this)"><img src="assets/aries.png"></div>
     </div>
-</body>
+</div>
+<div id="secondaryCont">
+    <div class="imgWrapper">
+        <img id="randomImg" src="" alt="">
+    </div>
 
+    <p>Your Sunsign is <span id="sunSign"></span></p>
+    <h3>Horoscope for today is:</h3>
+    <div id="serverContent"></div>
+    <p>Mood for today: <span id="mood"></span></p>
+    <button onclick="showAllSings()">Show me other Zodiac signs</button>
+</div>
+
+
+<script src="main.js"></script>
+</body>
 </html>
