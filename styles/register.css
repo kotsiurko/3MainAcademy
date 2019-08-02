@@ -1,0 +1,15 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-container > span > input {
+    height: 25px;
+    width: 400px;
+    margin: 5px;
+}
+button{
+    width: 80px;
+    margin: 0 auto;
+}

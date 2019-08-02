@@ -1,50 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport">
-    <title>Learn how Bootstrap</title>
-    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<h1 id="header" class="mainHeader">Choose your Sunsign</h1>
 
-<!-- added h1 title and changed input on bootstrap's one -->
-<h1 class="container">Movie factory</h1>
-
-<div class="input-group mb-3 container">
-    <input id="query" type="text" class="form-control" placeholder="Type here to find interesting movies" aria-label="Recipient's username" aria-describedby="button-addon2">
-    <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+<div id="mainCont" class="mainContainer">
+    <div class="rowContainer">
+        <div id="gemini" onclick="getSignHoroscope(this)"><img src="assets/gemini.png"></div>
+        <div id="aquarius" onclick="getSignHoroscope(this)"><img src="assets/aquarius.png"></div>
+        <div id="cancer" onclick="getSignHoroscope(this)"><img src="assets/cancer.png"></div>
+        <div id="capricorn" onclick="getSignHoroscope(this)"><img src="assets/capricorn.png"></div>
+    </div>
+    <div class="rowContainer">
+        <div id="leo" onclick="getSignHoroscope(this)"><img src="assets/leo.png"></div>
+        <div id="libra" onclick="getSignHoroscope(this)"><img src="assets/libra.png"></div>
+        <div id="pisces" onclick="getSignHoroscope(this)"><img src="assets/pisces.png"></div>
+        <div id="sagittarius" onclick="getSignHoroscope(this)"><img src="assets/sagittarius.png"></div>
+    </div>
+    <div class="rowContainer">
+        <div id="scorpio" onclick="getSignHoroscope(this)"><img src="assets/scorpio.png"></div>
+        <div id="taurus" onclick="getSignHoroscope(this)"><img src="assets/taurus.png"></div>
+        <div id="virgo" onclick="getSignHoroscope(this)"><img src="assets/virgo.png"></div>
+        <div id="aries" onclick="getSignHoroscope(this)"><img src="assets/aries.png"></div>
     </div>
 </div>
 
-
-<h4 id="text" class="container">Popular Movies</h4>
-
-<div id="mainContainer" class="container">
-    <!--<div class="card" style="width: 18rem;">-->
-        <!--<img id="filmImage" src="" class="card-img-top" alt="...">-->
-        <!--<div class="card-body">-->
-            <!--<h5 id="filmTitle" class="card-title">Card title</h5>-->
-            <!--<p id="filmDescription"class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-        <!--</div>-->
-    <!--</div>-->
+<div id="secondaryCont">
+    <div class="imgWrapper">
+        <img id="randomImg">
+    </div>
+    <p>Your Sunsign is <span id="sunSign"></span></p>
+    <h3>Horoscope for today is:</h3>
+    <div id="serverContent"></div>
+    <p>Mood for today: <span id="mood"></span></p>
+    <button onclick="showAllSings()">Show me other Zodiac signs</button>
 </div>
 
 
-
-
-
-
-<script src="libs/jquery-3.4.1.min.js"></script>
-<script src="libs/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
-<script src="libs/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
