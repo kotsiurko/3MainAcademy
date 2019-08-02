@@ -1,0 +1,48 @@
+.mainHeader{
+  text-align: center;
+  font-family: fantasy;
+}
+.rowContainer{
+  display: flex;
+  justify-content: center;
+}
+.rowContainer>div:hover{
+   cursor: pointer;
+   background-color: aliceblue;
+ }
+.rowContainer>div:active{
+  border: 1px solid lightskyblue;
+}
+#secondaryCont{
+  display: none;
+  margin: 0 15%;
+}
+#sunSign{
+  font-weight: bold;
+}
+#mood{
+  font-weight: bold;
+}
+.imgWrapper{
+  text-align: center;
+}
+
+
+
+
+/* added flexbox for container and some style for card */
+.container {
+    display: flex; /* or inline-flex */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    margin: 5px;
+}
+
+.input-group{
+    max-width: 500px;
+}
+/* -------------- end of addintion -------------------- */
+
+/*# sourceMappingURL=style.css.map */

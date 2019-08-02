@@ -2,24 +2,49 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Hello World Page</title>
-    <link rel="icon" href="http://icons.iconarchive.com/icons/marcus-roberto/google-play/128/Google-Drive-icon.png">
+    <meta name="viewport">
+    <title>Learn how Bootstrap</title>
+    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
-
-<!- comments here -->
-
 <body>
-Hello World!
-    <div>
-       <img src="https://www.stockvault.net/data/2007/03/01/102413/thumb16.jpg" alt="Nature pic"/>
-    </div>
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/yhIuIYx_6EI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div>
-        <iframe width="560" height="315" src="https://ru.wikipedia.org/wiki/Вики"></iframe>
-        <iframe width="560" height="315" src="https://ru.wikipedia.org/wiki/Вики"></iframe>
-    </div>
-</body>
 
+
+<!-- added h1 title and changed input on bootstrap's one -->
+<h1 class="container">Movie factory</h1>
+
+<div class="input-group mb-3 container">
+    <input id="query" type="text" class="form-control" placeholder="Type here to find interesting movies" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+    </div>
+</div>
+
+
+<h4 id="text" class="container">Popular Movies</h4>
+
+<div id="mainContainer" class="container">
+    <!--<div class="card" style="width: 18rem;">-->
+        <!--<img id="filmImage" src="" class="card-img-top" alt="...">-->
+        <!--<div class="card-body">-->
+            <!--<h5 id="filmTitle" class="card-title">Card title</h5>-->
+            <!--<p id="filmDescription"class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+
+
+
+
+
+
+<script src="libs/jquery-3.4.1.min.js"></script>
+<script src="libs/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="libs/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
 </html>
